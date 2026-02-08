@@ -129,7 +129,7 @@
 }
 
 .shop-item .image-box .item-options .btn_shop:hover{
-	background:#FF3333;
+	background:#C23B22;
 	color:#fff;	
 }
 
@@ -160,7 +160,7 @@
 .shop-item .product_description .price{
 	font-size:16px;
 	font-weight:500;
-	color:#FF3333;
+	color:#C23B22;
 	line-height:20px;	
 }
 
@@ -269,7 +269,7 @@
 
 .product-details .basic-details .details-header .item-price{
 	font-size:21px;
-	color:#FF3333;
+	color:#C23B22;
 	line-height:24px;
 	letter-spacing:1px;
 	margin-bottom:5px;
@@ -395,7 +395,7 @@ input.qty2 {
 	font-size: 13px;
 	padding: 5px;
 	border: 1px solid #ddd;
-	color:#555 !important;
+	color:#333333 !important;
 	background-color: #fff;
 }
 
@@ -471,7 +471,7 @@ input.qty2 {
 
 .prod-tabs .tabs-container{
 	position:relative;
-	color:#555;
+	color:#333333;
 	background:#fff;
 	border:1px solid #ddd;	
 }
@@ -612,9 +612,9 @@ input.qty2 {
 /*============================================================================================*/
 
 .btn_cart_outine{
-	color:#06C;
+	color:#3E5E3A;
 	background: none;
-	border:2px solid #06C;
+	border:2px solid #3E5E3A;
 	font-family: inherit;
 	font-size: inherit;
 	cursor: pointer;
@@ -633,8 +633,8 @@ input.qty2 {
 }
 .btn_cart_outine:hover{
 	color:#fff;
-	background:#FF3333;
-	border:2px solid #FF3333;
+	background:#C23B22;
+	border:2px solid #C23B22;
 }
 
 .table.cart-list.shopping-cart th,
@@ -738,7 +738,7 @@ input.qty2 {
 }
 
 .cart-section .totals-table .total{
-	color:#FF3333;
+	color:#C23B22;
 	font-weight:600;
 }
 
@@ -755,7 +755,7 @@ input.qty2 {
 	margin-bottom:15px;
 	line-height:24px;
 	padding:15px 20px;
-	background:#FF3333;
+	background:#C23B22;
 	color:#fff;
 }
 
@@ -873,7 +873,7 @@ input.qty2 {
 .default-title{
 	margin-bottom:25px;
 	padding: 10px;
-	background-color: #555;
+	background-color: #333333;
 	color: #fff;
 }
 
@@ -1064,13 +1064,13 @@ input.qty2 {
 }
 
 .sidebar .related-products .post a:hover{
-	color:#FF3333;	
+	color:#C23B22;	
 }
 
 .sidebar .related-products .post .price{
 	font-size:15px;
 	font-weight:500;
-	color:#FF3333;	
+	color:#C23B22;	
 }
 .sidebar .related-products .post .rating{
 	font-size:13px;
@@ -1100,7 +1100,7 @@ input.qty2 {
 	padding-bottom:0;
 }
 #cat_shop ul li a:hover{
-	color:#FF3333;
+	color:#C23B22;
 }
 
 /*============================================================================================*/

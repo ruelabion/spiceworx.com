@@ -29,9 +29,10 @@ All working files live under `home_alarms_v.2.9_template/html/`. There is no sep
 home_alarms_v.2.9_template/html/
 ├── index.html              # Homepage (primary landing page)
 ├── about.html              # About page
-├── service_layout_1.html   # Web Application Development
-├── services_layout_2.html  # Mobile Application Development (note: "services" plural)
-├── services_layout_3.html  # Web Hosting & Maintenance (note: "services" plural)
+├── service_web-app.html    # Web Application Development
+├── service_mobile-app.html # Mobile Application Development
+├── service_hosting.html    # Web Hosting & Maintenance
+├── service_uiux-design.html # UI/UX Design
 ├── contacts.html           # Contact page
 ├── quotation.html          # Project Inquiry Form
 ├── shop.html               # Repurposed as Hosting Packages
@@ -74,10 +75,6 @@ Styles load in this order (defined in each HTML `<head>`):
 
 **Always add new styles to `custom.css`** to keep template updates safe and maintain override priority.
 
-### Naming Inconsistency
-
-Watch out: `service_layout_1.html` (singular) vs `services_layout_2.html` and `services_layout_3.html` (plural). Internal links must match the exact filenames.
-
 ## Branding (from SpiceWorx Brand Guide)
 
 ### Brand Personality & Tone
@@ -107,13 +104,14 @@ CTA button hover: `#A12F1C` (darker chili). Secondary button hover: `#5A8E49` (m
 - **Headings:** Open Sans Bold (700)
 - **Body Text:** Open Sans Regular (400)
 - **Quotes:** Open Sans Italic
-- Template originally uses Poppins — replace Google Fonts link in all HTML `<head>` sections
+- ~~Template originally uses Poppins~~ — DONE: Google Fonts link updated to Open Sans in all 26 HTML/PHP files and CSS
 - Clean sans-serif for digital use. Avoid decorative fonts — clarity first.
 
 ### Logo
 
 - Wordmark: "SpiceWorx" in green text with red "i" (symbolizes chili pepper / bold differentiator)
-- `img/spiceworx-logo.png` (428×88 PNG). The original template logo is `img/logo.png` (190×44).
+- Source: `/Users/ruelabion/Sites/CodeCommit/spiceworx.com/html/img/logo.png` (428×88 PNG)
+- DONE: Copied to `img/logo.png` and `img/logo-footer.png`, displayed at 214×44 in HTML
 - Use consistently — do not stretch, skew, or recolor.
 
 ### Graphic Style
@@ -160,16 +158,17 @@ CTA button hover: `#A12F1C` (darker chili). Secondary button hover: `#5A8E49` (m
 | Template Page | SpiceWorx Purpose |
 |---|---|
 | `index.html` | Homepage |
-| `service_layout_1.html` | Web App Development |
-| `services_layout_2.html` | Mobile App Development |
-| `services_layout_3.html` | Web Hosting & Maintenance |
+| `service_web-app.html` | Web App Development |
+| `service_mobile-app.html` | Mobile App Development |
+| `service_hosting.html` | Web Hosting & Maintenance |
+| `service_uiux-design.html` | UI/UX Design |
 | `about.html` | About (pivot story) |
 | `contacts.html` | Contact |
 | `quotation.html` | Project Inquiry Form |
 | `shop.html` | Hosting Packages |
 | `blog.html` | Blog & Resources |
 
-Pages to ignore/remove: `index_2/3/4.html` (alt homepages), `cart.html`, `checkout.html`, `accessories.html`, `icon_pack_*.html`, `shortcodes.html`, `tips.html`, `contacts_2.html`, `quotation_wizard.html`.
+Pages to ignore/remove: `index_2/3/4.html` (alt homepages), `cart.html`, `checkout.html`, `accessories.html`, `icon_pack_*.html`, `shortcodes.html`, `tips.html`, `contacts_2.html`, `quotation_wizard.html`, `shop-single.html`.
 
 ## Existing SpiceWorx Site (Content Reference)
 
@@ -198,11 +197,53 @@ The old site's services (cross-cultural training, consulting, interpreter servic
 
 When converting template content to SpiceWorx:
 
-1. **Every HTML file** has an identical header/footer structure — changes to nav links, logo, phone, or footer must be replicated across all kept pages
-2. Colors in `style.css` use hex values throughout (no CSS variables) — search-and-replace is the primary rebranding method
-3. The template's original blue accent is `#06C` (links) and various blues in `style.css` — these map to the SpiceWorx palette
-4. Form `action` attributes point to PHP files in `assets/` or root — update email addresses in those PHP files
-5. Google Fonts link in `<head>` needs changing from Poppins to Open Sans across all HTML files
+1. **Every HTML file** has an identical header/footer structure — changes to nav links, logo, phone, or footer must be replicated across all kept pages (10 files total)
+2. Form `action` attributes point to PHP files in `assets/` or root — update email addresses in those PHP files
+
+## Navigation Structure
+
+The site uses a 5-item nav menu, consistent across all 10 kept pages:
+
+| # | Label | Page |
+|---|-------|------|
+| 1 | Home | `index.html` |
+| 2 | Services (dropdown) | |
+|   | — Web App Development | `service_web-app.html` |
+|   | — Mobile App Development | `service_mobile-app.html` |
+|   | — Web Hosting & Maintenance | `service_hosting.html` |
+|   | — UI/UX Design | `service_uiux-design.html` |
+| 3 | About | `about.html` |
+| 4 | Project Inquiry | `quotation.html` |
+| 5 | Contact | `contacts.html` |
+
+**Top bar:** Left = "Bridging Cultures. Building Solutions." | Right = +632-8899-6784 + info@spiceworx.com
+
+**Footer:** Col 1 (Logo + description) | Col 2 (Quick Links: Home, About, Services, Project Inquiry, Contact) | Col 3 (Unit 5 Ecoville, Sta. Cruz, Makati 1205) | Social icons | © SpiceWorx Consultancy, Inc. 2026
+
+## Phase 2 Progress (Design Customization)
+
+| Task | Status | Details |
+|------|--------|---------|
+| Font swap (Poppins → Open Sans) | DONE | 26 HTML/PHP files + 3 CSS files |
+| Color scheme replacement | DONE | 87 occurrences across style.css, menu.css, shop.css, blog.css, date_picker.css |
+| Logo replacement | DONE | SpiceWorx logo copied to img/logo.png + img/logo-footer.png, 70 HTML references updated |
+| Navigation & menu structure | DONE | New 5-item menu, top bar, footer across 10 HTML files; service_uiux-design.html created |
+| Icons (security → development) | TODO | |
+| Images (alarm → tech themed) | TODO | |
+
+### Color Mapping Applied
+
+| Old Template | → | New SpiceWorx | Role |
+|---|---|---|---|
+| `#FF3333` / `#F33` | → | `#C23B22` | Chili Red (CTA, accents) |
+| `#e04f67` | → | `#A12F1C` | Darker Chili (hover) |
+| `#e34f4f` | → | `#C23B22` | Error/alert |
+| `#ed1c24` | → | `#C23B22` | Badge/social |
+| `#629976` / `#619979` | → | `#3E5E3A` | Deep Olive Green |
+| `#06C` | → | `#3E5E3A` | Links/buttons (was blue) |
+| `#555` | → | `#333333` | Body text |
+| `rgba(0,37,74,0.8)` | → | `rgba(62,94,58,0.8)` | Dark overlay |
+| `#fff` (body bg) | → | `#F2F2F0` | Warm gray background |
 
 ## Company Info (for footers, contact pages, meta tags)
 

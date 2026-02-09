@@ -1,2 +1,135 @@
 /* WRITE HERE YOUR CUSTOM CSS IN ORDER TO MAKE ITEM UPDATES EASY */
 
+/* ========================================
+   About Page Styles
+   ======================================== */
+
+/* Section title block */
+.about_title {
+	margin-bottom: 40px;
+}
+.about_title h2 {
+	font-size: 36px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.about_title p {
+	font-size: 18px;
+	color: #7A8E72;
+	margin-bottom: 0;
+}
+
+/* Alternating background */
+.bg_color_1 {
+	background-color: #F2F2F0;
+	padding: 10px 0;
+}
+
+/* Pivot Story boxes */
+.box_feat_about {
+	padding: 30px 20px;
+	margin-bottom: 25px;
+}
+.box_feat_about i {
+	font-size: 2.5rem;
+	color: #3E5E3A;
+	margin-bottom: 15px;
+	display: block;
+}
+.box_feat_about h3 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.box_feat_about p {
+	color: #555;
+	line-height: 1.7;
+}
+
+/* Why Choose Us - reason boxes */
+.reason_box {
+	padding: 20px 15px;
+	margin-bottom: 20px;
+}
+.reason_box .icon_set {
+	display: inline-block;
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.reason_box h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 8px;
+}
+.reason_box p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+/* Core Values boxes */
+.value_box {
+	background: #fff;
+	padding: 25px 20px;
+	margin-bottom: 25px;
+	border-radius: 4px;
+	border-left: 3px solid #3E5E3A;
+}
+.value_box h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 8px;
+}
+.value_box h4 i {
+	color: #3E5E3A;
+	margin-right: 8px;
+}
+.value_box p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.7;
+	margin-bottom: 0;
+}
+
+/* Who We Serve - audience boxes */
+.audience_box {
+	padding: 30px 20px;
+	margin-bottom: 25px;
+}
+.audience_box h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333333;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.audience_box p {
+	color: #555;
+	line-height: 1.7;
+}
+
+/* CTA section */
+.call_section {
+	background-color: #3E5E3A;
+	padding: 40px 0;
+	color: #fff;
+}
+.call_section h3 {
+	color: #fff;
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.call_section p {
+	color: #FAFAF5;
+	font-size: 16px;
+	margin-bottom: 0;
+}
+.call_section .btn_1 {
+	margin-top: 15px;
+}

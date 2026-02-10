@@ -133,3 +133,485 @@
 .call_section .btn_1 {
 	margin-top: 15px;
 }
+
+/* ========================================
+   Hosting Service Page Styles
+   ======================================== */
+
+/* Service feature box (hero section) */
+.box_feat_service {
+	background: #F2F2F0;
+	padding: 30px 20px;
+	border-radius: 4px;
+	text-align: center;
+	margin-top: 20px;
+}
+.box_feat_service i {
+	font-size: 2.5rem;
+	color: #3E5E3A;
+	margin-bottom: 10px;
+	display: block;
+}
+.box_feat_service h3 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 8px;
+}
+.box_feat_service p {
+	color: #555;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+/* Why Different - feature boxes */
+.feature_hosting {
+	padding: 25px 20px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.feature_hosting i {
+	font-size: 2.5rem;
+	color: #3E5E3A;
+	margin-bottom: 12px;
+	display: block;
+}
+.feature_hosting h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.feature_hosting p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.7;
+	margin-bottom: 0;
+}
+
+/* What's Included - service list */
+.included_service {
+	padding: 15px 0;
+	border-bottom: 1px solid #DAD8D3;
+}
+.included_service:last-child {
+	border-bottom: none;
+}
+.included_service h4 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 8px;
+}
+.included_service h4 i {
+	color: #C23B22;
+	margin-right: 8px;
+}
+.included_service p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+/* Hosting Types boxes */
+.hosting_type_box {
+	padding: 25px 20px;
+	margin-bottom: 25px;
+	background: #fff;
+	border-radius: 4px;
+	border-top: 3px solid #3E5E3A;
+}
+.type_icon {
+	font-size: 2.5rem;
+	color: #3E5E3A;
+	margin-bottom: 15px;
+}
+.type_icon i {
+	display: block;
+}
+.hosting_type_box h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 12px;
+}
+.hosting_type_box p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 8px;
+}
+.hosting_type_box .badge {
+	font-size: 12px;
+	padding: 5px 10px;
+}
+
+/* Process steps */
+.process_step {
+	padding: 20px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.step_number {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #3E5E3A;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.process_step h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.process_step p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+/* Technical stack list */
+.tech_list {
+	list-style: none;
+	padding-left: 0;
+}
+.tech_list li {
+	padding: 8px 0;
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	border-bottom: 1px solid #DAD8D3;
+}
+.tech_list li:last-child {
+	border-bottom: none;
+}
+.tech_list i {
+	color: #3E5E3A;
+	margin-right: 10px;
+	font-weight: 700;
+}
+.tech_list strong {
+	color: #333333;
+	font-weight: 700;
+}
+
+/* Guarantee box */
+.guarantee_box {
+	padding: 40px 30px;
+	background: #F2F2F0;
+	border-radius: 4px;
+	text-align: center;
+}
+.guarantee_box h3 {
+	font-size: 28px;
+	font-weight: 700;
+	color: #333333;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.guarantee_box .lead {
+	color: #555;
+	font-size: 16px;
+	line-height: 1.7;
+}
+.guarantee_box p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+/* Pricing boxes */
+.pricing_box {
+	padding: 30px 20px;
+	margin-bottom: 25px;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid #DAD8D3;
+	position: relative;
+	transition: all 0.3s ease;
+}
+.pricing_box:hover {
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.pricing_box.featured {
+	border-color: #C23B22;
+	border-width: 2px;
+	transform: translateY(-10px);
+}
+.badge_featured {
+	position: absolute;
+	top: -15px;
+	left: 20px;
+	background-color: #C23B22;
+	color: #fff;
+	padding: 5px 15px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.plan_header {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #DAD8D3;
+	margin-bottom: 20px;
+}
+.plan_header h3 {
+	font-size: 22px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.price {
+	font-size: 36px;
+	font-weight: 700;
+	color: #3E5E3A;
+	margin-bottom: 5px;
+}
+.price span {
+	font-size: 16px;
+	font-weight: 400;
+	color: #555;
+}
+.subtitle {
+	color: #7A8E72;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.plan_features {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 20px;
+}
+.plan_features li {
+	padding: 8px 0;
+	color: #555;
+	font-size: 14px;
+	border-bottom: 1px solid #F2F2F0;
+}
+.plan_features li.text-muted {
+	color: #999;
+}
+.plan_features i {
+	color: #C23B22;
+	margin-right: 8px;
+}
+.plan_features li.text-muted i {
+	color: #ccc;
+}
+.full-width {
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding: 12px;
+}
+
+/* Utility class for top margin */
+.add_top_30 {
+	margin-top: 30px;
+}
+
+.add_left_30 {
+	margin-left: 30px;
+}
+
+/* Web App Service Page Styles */
+
+/* Tech stack section styling */
+.tech_section {
+	padding: 20px 0;
+	border-bottom: 1px solid #DAD8D3;
+}
+.tech_section:last-child {
+	border-bottom: none;
+}
+.tech_section h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 12px;
+}
+.tech_section p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.7;
+	margin-bottom: 8px;
+}
+
+/* Accordion styling */
+.accordion {
+	border: 1px solid #DAD8D3;
+	border-radius: 4px;
+}
+.accordion-item {
+	border: none;
+	border-bottom: 1px solid #DAD8D3;
+}
+.accordion-item:last-child {
+	border-bottom: none;
+}
+.accordion-button {
+	font-weight: 700;
+	color: #333333;
+	background-color: #fff;
+	padding: 18px 20px;
+	font-size: 16px;
+}
+.accordion-button:not(.collapsed) {
+	background-color: #F2F2F0;
+	color: #333333;
+	box-shadow: none;
+}
+.accordion-button:focus {
+	border-color: #3E5E3A;
+	box-shadow: 0 0 0 0.25rem rgba(62, 94, 58, 0.25);
+}
+.accordion-body {
+	padding: 20px;
+	background-color: #fff;
+	color: #555;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+/* Mobile App Service Page Styles */
+
+/* Case study boxes */
+.case_study_box {
+	padding: 25px 20px;
+	background: #fff;
+	border-radius: 4px;
+	border-left: 4px solid #C23B22;
+	height: 100%;
+}
+.case_study_box h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 15px;
+}
+.case_study_box p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+.case_study_box p:last-child {
+	margin-bottom: 0;
+}
+
+/* Approach boxes for development philosophy */
+.approach_box {
+	padding: 20px 0;
+	border-bottom: 1px solid #DAD8D3;
+}
+.approach_box:last-child {
+	border-bottom: none;
+}
+.approach_box h4 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.approach_box p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+/* Platform support boxes */
+.platform_box {
+	padding: 25px 20px;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid #DAD8D3;
+}
+.platform_box h4 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 15px;
+}
+.platform_box ul li {
+	color: #555;
+	font-size: 13px;
+}
+
+/* 5-column grid helper for process steps */
+@media (min-width: 992px) {
+	.col-lg-2-4 {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+}
+
+/* UI/UX Design Service Page Styles */
+
+/* Design principle boxes */
+.principle_box {
+	padding: 20px 0;
+	border-bottom: 1px solid #DAD8D3;
+}
+.principle_box:last-child {
+	border-bottom: none;
+}
+.principle_box h4 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.principle_box p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+/* Toolkit boxes */
+.toolkit_box {
+	padding: 25px 20px;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid #DAD8D3;
+}
+.toolkit_box h4 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 15px;
+}
+.toolkit_box ul li {
+	color: #555;
+	font-size: 13px;
+}
+
+/* Service item boxes (for à la carte & bundled services) */
+.service_item_box {
+	padding: 18px 0;
+	border-bottom: 1px solid #DAD8D3;
+}
+.service_item_box:last-child {
+	border-bottom: none;
+}
+.service_item_box h5 {
+	font-size: 15px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 8px;
+}
+.service_item_box p {
+	color: #555;
+	font-size: 13px;
+	line-height: 1.5;
+	margin-bottom: 0;
+}

@@ -28,11 +28,7 @@
 	<link href="css/magnific-popup.min.css" rel="stylesheet">
 	<link href="css/bs-icon-font/bootstrap-icons.min.css" rel="stylesheet">
 
-    <!-- SPECIFIC CSS -->
-    <link href="css/date_picker.css" rel="stylesheet">
-    <link href="css/jquery.switch.css" rel="stylesheet">
-
-    <!-- YOUR CUSTOM CSS -->
+	<!-- YOUR CUSTOM CSS -->
 	<link href="css/custom.css" rel="stylesheet">
 
 </head>
@@ -108,106 +104,91 @@
 		<div id="sub_content_in">
 			<div class="container">
 				<h1>Tell Us About Your Project</h1>
-				<p>Whether you're starting from scratch or already have a vision—answer a few questions so we can understand your needs and provide an accurate estimate.</p>
+				<p>Get a customized proposal — free consultation included</p>
 			</div>
 		</div>
 	</section><!-- End section -->
 
    	<main>
         <div class="container margin_60_35">
-        	<div class="row">
-                <div class="col-lg-10">
-				<p class="text-center" style="font-size: 16px; color: #7A8E72; margin-bottom: 40px;"><strong>Takes 3-5 minutes. All fields optional except your contact info.</strong></p>
+        	<div class="row justify-content-center">
 
-                <form id="quotation" action="assets/quotation-send.php" method="POST" enctype="multipart/form-data" class="contact_form">
+                <div class="col-lg-10">
+					<div style="text-align: center; margin-bottom: 40px;">
+						<p class="lead">Whether you're starting from scratch or already have a vision—answer a few questions so we can understand your needs and provide an accurate estimate.</p>
+						<p style="color: #7A8E72;"><em>Takes 3-5 minutes. All fields optional except your contact info.</em></p>
+					</div>
+
+					<form id="quotation_form" action="assets/quotation-send.php" method="POST" enctype="multipart/form-data">
+
 					<!-- Section 1: Contact Information -->
 					<div style="padding-bottom: 30px; border-bottom: 2px solid #DAD8D3; margin-bottom: 30px;">
 						<h2 style="font-size: 28px; font-weight: 700; color: #333333; margin-bottom: 20px;">Let's Start With You</h2>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="required">Your Name</label>
-									<input type="text" class="form-control" id="name" name="name" required>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="required">Email Address</label>
-									<input type="email" class="form-control" id="email" name="email" required>
-								</div>
-							</div>
+						<div class="form-group">
+							<label>Your Name <span style="color: #C23B22;">*</span></label>
+							<input type="text" class="form-control" id="name" name="name" required>
 						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label>Phone Number (optional but recommended)</label>
-									<input type="tel" class="form-control" id="phone" name="phone" placeholder="+1 (555) 000-0000">
-									<small style="color: #7A8E72;">Useful if we need to clarify details quickly.</small>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label>Company Name (optional)</label>
-									<input type="text" class="form-control" id="company" name="company">
-								</div>
-							</div>
+						<div class="form-group">
+							<label>Email Address <span style="color: #C23B22;">*</span></label>
+							<input type="email" class="form-control" id="email" name="email" required>
 						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label>Your Role (optional)</label>
-									<select class="form-select" id="role" name="role">
-										<option value="">Select one...</option>
-										<option value="Business Owner / Founder">Business Owner / Founder</option>
-										<option value="CTO / Technical Lead">CTO / Technical Lead</option>
-										<option value="Product Manager">Product Manager</option>
-										<option value="Marketing / Operations">Marketing / Operations</option>
-										<option value="Other">Other</option>
-									</select>
-								</div>
-							</div>
+						<div class="form-group">
+							<label>Phone Number (optional but recommended)</label>
+							<input type="tel" class="form-control" id="phone" name="phone">
+							<small style="color: #7A8E72;">Useful if we need to clarify details quickly.</small>
+						</div>
+						<div class="form-group">
+							<label>Company Name (optional)</label>
+							<input type="text" class="form-control" id="company" name="company">
+						</div>
+						<div class="form-group">
+							<label>Your Role (optional)</label>
+							<select class="form-select" id="role" name="role">
+								<option value="">Select one...</option>
+								<option value="Business Owner / Founder">Business Owner / Founder</option>
+								<option value="CTO / Technical Lead">CTO / Technical Lead</option>
+								<option value="Product Manager">Product Manager</option>
+								<option value="Marketing / Operations">Marketing / Operations</option>
+								<option value="Other">Other</option>
+							</select>
 						</div>
 					</div>
 
-					<!-- Section 2: Services Needed -->
+					<!-- Section 2: Service Selection -->
 					<div style="padding-bottom: 30px; border-bottom: 2px solid #DAD8D3; margin-bottom: 30px;">
-						<h2 style="font-size: 28px; font-weight: 700; color: #333333; margin-bottom: 10px;">What Services Do You Need?</h2>
-						<p style="color: #555; margin-bottom: 20px;">Select all that apply. If you're not sure, that's okay—we'll help you figure it out.</p>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="service_web" name="services" value="Web App Development">
-									<label class="form-check-label" for="service_web">Web App Development</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="service_mobile" name="services" value="Mobile App Development">
-									<label class="form-check-label" for="service_mobile">Mobile App Development (iOS, Android, or both)</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="service_design" name="services" value="UI/UX Design">
-									<label class="form-check-label" for="service_design">UI/UX Design</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="service_hosting" name="services" value="Web Hosting & Maintenance">
-									<label class="form-check-label" for="service_hosting">Web Hosting & Maintenance</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="service_redesign" name="services" value="Website Redesign / Migration">
-									<label class="form-check-label" for="service_redesign">Website Redesign / Migration</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="service_consulting" name="services" value="Technical Consulting">
-									<label class="form-check-label" for="service_consulting">Technical Consulting</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="service_support" name="services" value="Ongoing Support & Maintenance">
-									<label class="form-check-label" for="service_support">Ongoing Support & Maintenance</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="service_unsure" name="services" value="Not sure yet">
-									<label class="form-check-label" for="service_unsure">Not sure yet—I need advice</label>
-								</div>
-							</div>
+						<h2 style="font-size: 28px; font-weight: 700; color: #333333; margin-bottom: 20px;">What Services Do You Need?</h2>
+						<p style="color: #555; margin-bottom: 15px;">Select all that apply. If you're not sure, that's okay—we'll help you figure it out.</p>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="service1" name="services[]" value="Web App Development">
+							<label class="form-check-label" for="service1">Web App Development</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="service2" name="services[]" value="Mobile App Development">
+							<label class="form-check-label" for="service2">Mobile App Development (iOS, Android, or both)</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="service3" name="services[]" value="UI/UX Design">
+							<label class="form-check-label" for="service3">UI/UX Design</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="service4" name="services[]" value="Web Hosting & Maintenance">
+							<label class="form-check-label" for="service4">Web Hosting & Maintenance</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="service5" name="services[]" value="Website Redesign / Migration">
+							<label class="form-check-label" for="service5">Website Redesign / Migration</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="service6" name="services[]" value="Technical Consulting">
+							<label class="form-check-label" for="service6">Technical Consulting</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="service7" name="services[]" value="Ongoing Support & Maintenance">
+							<label class="form-check-label" for="service7">Ongoing Support & Maintenance</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="service8" name="services[]" value="Not sure yet">
+							<label class="form-check-label" for="service8">Not sure yet—I need advice</label>
 						</div>
 					</div>
 
@@ -215,12 +196,12 @@
 					<div style="padding-bottom: 30px; border-bottom: 2px solid #DAD8D3; margin-bottom: 30px;">
 						<h2 style="font-size: 28px; font-weight: 700; color: #333333; margin-bottom: 20px;">Tell Us About Your Project</h2>
 						<div class="form-group">
-							<label class="required">What problem are you trying to solve?</label>
-							<textarea class="form-control" id="problem" name="problem" rows="4" placeholder="Example: We need a mobile app for field technicians to submit reports in real-time, or Our website is outdated and doesn't work well on phones." required></textarea>
+							<label>What problem are you trying to solve? <span style="color: #C23B22;">*</span></label>
+							<textarea class="form-control" id="problem" name="problem" rows="4" required placeholder="Example: We need a mobile app for field technicians to submit reports in real-time"></textarea>
 						</div>
 						<div class="form-group">
 							<label>Who will use this? (optional)</label>
-							<textarea class="form-control" id="users" name="users" rows="3" placeholder="Example: Our customers (ages 25-45, mostly mobile users) or Internal team of 50 employees across 3 offices."></textarea>
+							<textarea class="form-control" id="users" name="users" rows="3" placeholder="Example: Our customers (ages 25-45, mostly mobile users) or Internal team of 50 employees across 3 offices"></textarea>
 						</div>
 						<div class="form-group">
 							<label>Do you have an existing website or app? (optional)</label>
@@ -229,35 +210,35 @@
 								<label class="form-check-label" for="existing_yes">Yes—we're redesigning/upgrading</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" id="existing_no" name="existing" value="No - starting fresh">
+								<input class="form-check-input" type="radio" id="existing_no" name="existing" value="No - starting from scratch">
 								<label class="form-check-label" for="existing_no">No—starting from scratch</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" id="existing_some" name="existing" value="Sort of - something but not working well">
-								<label class="form-check-label" for="existing_some">Sort of—we have something but it's not working well</label>
+								<input class="form-check-input" type="radio" id="existing_sort" name="existing" value="Sort of">
+								<label class="form-check-label" for="existing_sort">Sort of—we have something but it's not working well</label>
 							</div>
 						</div>
-						<div class="form-group" id="url_group" style="display:none;">
-							<label>If yes, what's the URL? (optional)</label>
-							<input type="url" class="form-control" id="url" name="url" placeholder="https://example.com">
+						<div class="form-group" id="url_group" style="display: none;">
+							<label>If yes, what's the URL?</label>
+							<input type="url" class="form-control" id="existing_url" name="existing_url" placeholder="https://example.com">
 						</div>
 					</div>
 
 					<!-- Section 4: Project Scope & Features -->
 					<div style="padding-bottom: 30px; border-bottom: 2px solid #DAD8D3; margin-bottom: 30px;">
-						<h2 style="font-size: 28px; font-weight: 700; color: #333333; margin-bottom: 10px;">What Features Do You Need?</h2>
-						<p style="color: #555; margin-bottom: 20px;">Don't worry about technical details. Just describe what you envision in plain language.</p>
+						<h2 style="font-size: 28px; font-weight: 700; color: #333333; margin-bottom: 20px;">What Features Do You Need?</h2>
+						<p style="color: #555; margin-bottom: 15px;">Don't worry about technical details. Just describe what you envision in plain language.</p>
 						<div class="form-group">
 							<label>Core Features (optional)</label>
 							<textarea class="form-control" id="core_features" name="core_features" rows="5" placeholder="Example: User login, payment processing, admin dashboard, real-time notifications, map integration, file uploads..."></textarea>
 						</div>
 						<div class="form-group">
 							<label>Nice-to-Have Features (optional)</label>
-							<textarea class="form-control" id="nice_features" name="nice_features" rows="3" placeholder="Features that would be great but aren't essential for launch."></textarea>
+							<textarea class="form-control" id="nice_features" name="nice_features" rows="3" placeholder="Features that would be great but aren't essential for launch"></textarea>
 						</div>
 						<div class="form-group">
 							<label>Any integrations needed? (optional)</label>
-							<textarea class="form-control" id="integrations" name="integrations" rows="3" placeholder="Example: Stripe for payments, Google Calendar, Salesforce, Xero accounting, etc."></textarea>
+							<textarea class="form-control" id="integrations" name="integrations" rows="3" placeholder="Example: Integrate with Stripe for payments, Google Calendar, Salesforce, Xero accounting, etc."></textarea>
 						</div>
 					</div>
 
@@ -265,14 +246,14 @@
 					<div style="padding-bottom: 30px; border-bottom: 2px solid #DAD8D3; margin-bottom: 30px;">
 						<h2 style="font-size: 28px; font-weight: 700; color: #333333; margin-bottom: 20px;">Design Preferences</h2>
 						<div class="form-group">
-							<label>Do you have existing branding? (optional)</label>
+							<label>Do you have existing branding (logo, colors, fonts)?</label>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" id="brand_yes" name="branding" value="Yes - brand guide">
 								<label class="form-check-label" for="brand_yes">Yes—we have a brand guide</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" id="brand_partial" name="branding" value="Somewhat - logo but not much else">
-								<label class="form-check-label" for="brand_partial">Somewhat—we have a logo but not much else</label>
+								<input class="form-check-input" type="radio" id="brand_some" name="branding" value="Somewhat">
+								<label class="form-check-label" for="brand_some">Somewhat—we have a logo but not much else</label>
 							</div>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" id="brand_no" name="branding" value="No - need help">
@@ -281,51 +262,51 @@
 						</div>
 						<div class="form-group">
 							<label>Design inspiration (optional)</label>
-							<textarea class="form-control" id="inspiration" name="inspiration" rows="3" placeholder="Share links to websites or apps you like. What do you like about them?"></textarea>
+							<textarea class="form-control" id="design_inspiration" name="design_inspiration" rows="3" placeholder="Share links to websites or apps you like. What do you like about them?"></textarea>
 						</div>
 						<div class="form-group">
-							<label>Design priorities (optional)</label>
+							<label>Design priorities (select all that apply)</label>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="priority_clean" name="priorities" value="Clean and minimalist">
-								<label class="form-check-label" for="priority_clean">Clean and minimalist</label>
+								<input class="form-check-input" type="checkbox" id="design1" name="design_priorities[]" value="Clean and minimalist">
+								<label class="form-check-label" for="design1">Clean and minimalist</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="priority_bold" name="priorities" value="Modern and bold">
-								<label class="form-check-label" for="priority_bold">Modern and bold</label>
+								<input class="form-check-input" type="checkbox" id="design2" name="design_priorities[]" value="Modern and bold">
+								<label class="form-check-label" for="design2">Modern and bold</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="priority_professional" name="priorities" value="Professional and trustworthy">
-								<label class="form-check-label" for="priority_professional">Professional and trustworthy</label>
+								<input class="form-check-input" type="checkbox" id="design3" name="design_priorities[]" value="Professional and trustworthy">
+								<label class="form-check-label" for="design3">Professional and trustworthy</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="priority_creative" name="priorities" value="Fun and creative">
-								<label class="form-check-label" for="priority_creative">Fun and creative</label>
+								<input class="form-check-input" type="checkbox" id="design4" name="design_priorities[]" value="Fun and creative">
+								<label class="form-check-label" for="design4">Fun and creative</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="priority_mobile" name="priorities" value="Mobile-first">
-								<label class="form-check-label" for="priority_mobile">Mobile-first</label>
+								<input class="form-check-input" type="checkbox" id="design5" name="design_priorities[]" value="Mobile-first">
+								<label class="form-check-label" for="design5">Mobile-first</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="priority_accessibility" name="priorities" value="Accessibility">
-								<label class="form-check-label" for="priority_accessibility">Accessibility (for users with disabilities)</label>
+								<input class="form-check-input" type="checkbox" id="design6" name="design_priorities[]" value="Accessibility">
+								<label class="form-check-label" for="design6">Accessibility (for users with disabilities)</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="priority_speed" name="priorities" value="Fast loading speed">
-								<label class="form-check-label" for="priority_speed">Fast loading speed</label>
+								<input class="form-check-input" type="checkbox" id="design7" name="design_priorities[]" value="Fast loading speed">
+								<label class="form-check-label" for="design7">Fast loading speed</label>
 							</div>
 						</div>
 					</div>
 
 					<!-- Section 6: Technical Considerations -->
 					<div style="padding-bottom: 30px; border-bottom: 2px solid #DAD8D3; margin-bottom: 30px;">
-						<h2 style="font-size: 28px; font-weight: 700; color: #333333; margin-bottom: 10px;">Technical Details (Optional)</h2>
+						<h2 style="font-size: 28px; font-weight: 700; color: #333333; margin-bottom: 20px;">Technical Details <span style="font-size: 18px; font-weight: 400; color: #7A8E72;">(Optional—Skip If You're Not Sure)</span></h2>
 						<div class="form-group">
-							<label>Do you have technical requirements? (optional)</label>
-							<textarea class="form-control" id="tech_requirements" name="tech_requirements" rows="3" placeholder="Example: Must integrate with our backend API, or Needs to support 10,000+ concurrent users, or Must comply with GDPR."></textarea>
+							<label>Do you have technical requirements or constraints? (optional)</label>
+							<textarea class="form-control" id="tech_requirements" name="tech_requirements" rows="3" placeholder="Example: Must integrate with our existing backend API or Needs to support 10,000+ concurrent users or Must comply with GDPR"></textarea>
 						</div>
 						<div class="form-group">
-							<label>Preferred technology? (optional)</label>
-							<select class="form-select" id="tech_preference" name="tech_preference">
+							<label>Preferred technology or platform? (optional)</label>
+							<select class="form-select" id="preferred_tech" name="preferred_tech">
 								<option value="">No preference (recommend what's best)</option>
 								<option value="React / Next.js">React / Next.js (web apps)</option>
 								<option value="Flutter">Flutter (cross-platform mobile)</option>
@@ -338,16 +319,16 @@
 						<div class="form-group">
 							<label>Hosting preference? (optional)</label>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" id="hosting_have" name="hosting_pref" value="We already have hosting">
-								<label class="form-check-label" for="hosting_have">We already have hosting</label>
+								<input class="form-check-input" type="radio" id="host_have" name="hosting" value="Already have hosting">
+								<label class="form-check-label" for="host_have">We already have hosting</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" id="hosting_recommend" name="hosting_pref" value="We need hosting">
-								<label class="form-check-label" for="hosting_recommend">We need hosting—please recommend</label>
+								<input class="form-check-input" type="radio" id="host_need" name="hosting" value="Need hosting">
+								<label class="form-check-label" for="host_need">We need hosting—please recommend</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="radio" id="hosting_spiceworx" name="hosting_pref" value="We want SpiceWorx to manage hosting">
-								<label class="form-check-label" for="hosting_spiceworx">We want SpiceWorx to manage hosting</label>
+								<input class="form-check-input" type="radio" id="host_manage" name="hosting" value="SpiceWorx manage hosting">
+								<label class="form-check-label" for="host_manage">We want SpiceWorx to manage hosting</label>
 							</div>
 						</div>
 					</div>
@@ -358,7 +339,7 @@
 						<div class="form-group">
 							<label>Target Launch Date (optional)</label>
 							<select class="form-select" id="timeline" name="timeline">
-								<option value="">No specific deadline yet</option>
+								<option value="">Select one...</option>
 								<option value="As soon as possible">As soon as possible</option>
 								<option value="Within 1-2 months">Within 1-2 months</option>
 								<option value="Within 3-4 months">Within 3-4 months</option>
@@ -368,7 +349,7 @@
 							</select>
 						</div>
 						<div class="form-group">
-							<label>Is this date flexible? (optional)</label>
+							<label>Is this date flexible?</label>
 							<div class="form-check">
 								<input class="form-check-input" type="radio" id="flex_yes" name="timeline_flexible" value="Yes - rough target">
 								<label class="form-check-label" for="flex_yes">Yes—it's a rough target</label>

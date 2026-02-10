@@ -615,3 +615,133 @@
 	line-height: 1.5;
 	margin-bottom: 0;
 }
+
+/* Contact Page Styles */
+
+/* Contact info boxes (3-column layout) */
+.contact_box {
+	padding: 30px 20px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.contact_box i {
+	font-size: 2.5rem;
+	color: #3E5E3A;
+	margin-bottom: 15px;
+	display: block;
+}
+.contact_box h4 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 10px;
+}
+.contact_box p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+.contact_box a {
+	color: #C23B22;
+	text-decoration: none;
+	font-weight: 500;
+}
+.contact_box a:hover {
+	color: #A12F1C;
+}
+
+/* Why Reach Out boxes */
+.contact_reason_box {
+	padding: 25px 20px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.contact_reason_box i {
+	font-size: 2rem;
+	color: #3E5E3A;
+	margin-bottom: 12px;
+	display: block;
+}
+.contact_reason_box h4 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 8px;
+}
+.contact_reason_box p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+/* Alternative contact option boxes */
+.contact_option_box {
+	padding: 20px 0;
+	border-bottom: 1px solid #DAD8D3;
+}
+.contact_option_box:last-child {
+	border-bottom: none;
+}
+.contact_option_box h4 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 8px;
+}
+.contact_option_box p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+.contact_option_box a {
+	color: #C23B22;
+	text-decoration: none;
+	font-weight: 500;
+}
+.contact_option_box a:hover {
+	color: #A12F1C;
+}
+
+/* Contact form styling */
+.contact_form {
+	padding: 20px 0;
+}
+.contact_form .form-group {
+	margin-bottom: 20px;
+}
+.contact_form label {
+	font-weight: 600;
+	color: #333333;
+	margin-bottom: 8px;
+	display: block;
+	font-size: 14px;
+}
+.contact_form .form-control,
+.contact_form .form-select {
+	border: 1px solid #DAD8D3;
+	border-radius: 4px;
+	padding: 12px 15px;
+	font-size: 14px;
+	color: #555;
+}
+.contact_form .form-control:focus,
+.contact_form .form-select:focus {
+	border-color: #3E5E3A;
+	box-shadow: 0 0 0 0.25rem rgba(62, 94, 58, 0.25);
+}
+.contact_form .form-check-input {
+	margin-right: 8px;
+}
+.contact_form .form-check-label {
+	font-weight: normal;
+	margin-bottom: 0;
+	margin-left: 0.5rem;
+}
+.contact_form .required::after {
+	content: " *";
+	color: #C23B22;
+	font-weight: 700;
+}

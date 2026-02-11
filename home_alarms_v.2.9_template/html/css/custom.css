@@ -4,6 +4,12 @@
    Homepage Styles
    ======================================== */
 
+/* Homepage feature box icons - set uniform size */
+.box_feat span img {
+	width: 45px;
+	height: 45px;
+}
+
 /* Why Work With Us - feature boxes */
 .feature_home {
 	padding: 20px 0;
@@ -772,4 +778,572 @@
 	content: " *";
 	color: #C23B22;
 	font-weight: 700;
+}
+
+/* ========================================
+   RESPONSIVE STYLES
+   ======================================== */
+
+/* Large Tablets and Small Desktops (max-width: 991px) */
+@media (max-width: 991px) {
+	/* About page title */
+	.about_title h2 {
+		font-size: 28px;
+	}
+	.about_title p {
+		font-size: 16px;
+	}
+	
+	/* CTA section */
+	.call_section h3 {
+		font-size: 24px;
+	}
+	.call_section p {
+		font-size: 14px;
+	}
+	.call_section .btn_1 {
+		display: block;
+		margin: 15px auto 0 auto;
+		width: fit-content;
+	}
+	.call_section .add_left_30 {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	
+	/* Process steps - 3 columns on tablet */
+	.process_step {
+		padding: 15px;
+		margin-bottom: 20px;
+	}
+	.step_number {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 20px;
+	}
+	.process_step h4 {
+		font-size: 16px;
+	}
+	
+	/* Pricing boxes */
+	.pricing_box.featured {
+		transform: none;
+	}
+	
+	/* Feature boxes */
+	.feature_home {
+		padding: 15px 0;
+	}
+	.feature_hosting {
+		padding: 20px 15px;
+	}
+	
+	/* Case study boxes */
+	.case_study_box {
+		margin-bottom: 20px;
+		height: auto;
+	}
+	
+	/* Toolkit boxes */
+	.toolkit_box {
+		margin-bottom: 20px;
+	}
+	
+	/* Platform boxes */
+	.platform_box {
+		margin-bottom: 20px;
+	}
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+	/* About title */
+	.about_title {
+		margin-bottom: 30px;
+	}
+	.about_title h2 {
+		font-size: 24px;
+	}
+	.about_title p {
+		font-size: 14px;
+	}
+	
+	/* CTA section */
+	.call_section {
+		padding: 30px 15px;
+		text-align: center;
+	}
+	.call_section h3 {
+		font-size: 22px;
+	}
+	
+	/* Feature boxes */
+	.box_feat_about,
+	.box_feat_service {
+		padding: 25px 15px;
+		margin-bottom: 20px;
+	}
+	.box_feat_about i,
+	.box_feat_service i {
+		font-size: 2rem;
+	}
+	.box_feat_about h3,
+	.box_feat_service h3 {
+		font-size: 18px;
+	}
+	
+	/* Homepage features */
+	.feature_home i {
+		font-size: 1.8rem;
+	}
+	.feature_home h4 {
+		font-size: 15px;
+	}
+	
+	/* Hosting features */
+	.feature_hosting i {
+		font-size: 2rem;
+	}
+	.feature_hosting h4 {
+		font-size: 16px;
+	}
+	
+	/* Process steps - full width on mobile */
+	.process_step {
+		padding: 20px 15px;
+		margin-bottom: 15px;
+		background: #fff;
+		border-radius: 4px;
+	}
+	.process_step h4 {
+		font-size: 15px;
+	}
+	.process_step p {
+		font-size: 13px;
+	}
+	
+	/* Pricing boxes */
+	.pricing_box {
+		padding: 25px 15px;
+		margin-bottom: 20px;
+	}
+	.price {
+		font-size: 28px;
+	}
+	.plan_header h3 {
+		font-size: 20px;
+	}
+	
+	/* Value boxes */
+	.value_box {
+		padding: 20px 15px;
+		margin-bottom: 20px;
+	}
+	
+	/* Reason boxes */
+	.reason_box {
+		padding: 15px 10px;
+	}
+	
+	/* Audience boxes */
+	.audience_box {
+		padding: 25px 15px;
+	}
+	
+	/* Guarantee box */
+	.guarantee_box {
+		padding: 30px 20px;
+	}
+	.guarantee_box h3 {
+		font-size: 22px;
+	}
+	
+	/* Included services */
+	.included_service {
+		padding: 12px 0;
+	}
+	.included_service h4 {
+		font-size: 15px;
+	}
+	
+	/* Hosting type boxes */
+	.hosting_type_box {
+		padding: 20px 15px;
+	}
+	.hosting_type_box h4 {
+		font-size: 16px;
+	}
+	
+	/* Tech section */
+	.tech_section h4 {
+		font-size: 16px;
+	}
+	
+	/* Contact boxes */
+	.contact_box {
+		padding: 25px 15px;
+		margin-bottom: 20px;
+	}
+	.contact_box i {
+		font-size: 2rem;
+	}
+	.contact_box h4 {
+		font-size: 16px;
+	}
+	
+	/* Contact reason boxes */
+	.contact_reason_box {
+		padding: 20px 15px;
+	}
+	.contact_reason_box i {
+		font-size: 1.8rem;
+	}
+	
+	/* Principle boxes */
+	.principle_box {
+		padding: 15px 0;
+	}
+	.principle_box h4 {
+		font-size: 15px;
+	}
+	
+	/* Service item boxes */
+	.service_item_box {
+		padding: 15px 0;
+	}
+	.service_item_box h5 {
+		font-size: 14px;
+	}
+	
+	/* Accordion */
+	.accordion-button {
+		padding: 15px;
+		font-size: 14px;
+	}
+	.accordion-body {
+		padding: 15px;
+		font-size: 13px;
+	}
+	
+	/* Utility adjustments */
+	.add_left_30 {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+}
+
+/* Mobile (max-width: 576px) */
+@media (max-width: 576px) {
+	/* About title */
+	.about_title h2 {
+		font-size: 22px;
+		line-height: 1.3;
+	}
+	.about_title p {
+		font-size: 13px;
+	}
+	
+	/* CTA section */
+	.call_section {
+		padding: 25px 15px;
+	}
+	.call_section h3 {
+		font-size: 20px;
+		line-height: 1.3;
+	}
+	.call_section p {
+		font-size: 13px;
+	}
+	.call_section .btn_1 {
+		padding: 12px 20px;
+		font-size: 14px;
+		width: 100%;
+		max-width: 280px;
+	}
+	
+	/* Feature boxes */
+	.box_feat_about,
+	.box_feat_service {
+		padding: 20px 15px;
+	}
+	.box_feat_about h3,
+	.box_feat_service h3 {
+		font-size: 16px;
+	}
+	.box_feat_about p,
+	.box_feat_service p {
+		font-size: 13px;
+	}
+	
+	/* Homepage features */
+	.feature_home {
+		padding: 12px 0;
+		text-align: center;
+	}
+	.feature_home i {
+		font-size: 1.6rem;
+		margin-bottom: 8px;
+	}
+	.feature_home h4 {
+		font-size: 14px;
+	}
+	.feature_home p {
+		font-size: 13px;
+	}
+	
+	/* Hosting features */
+	.feature_hosting {
+		padding: 15px 10px;
+	}
+	.feature_hosting i {
+		font-size: 1.8rem;
+	}
+	.feature_hosting h4 {
+		font-size: 15px;
+	}
+	.feature_hosting p {
+		font-size: 13px;
+	}
+	
+	/* Process steps */
+	.process_step {
+		padding: 15px 10px;
+	}
+	.step_number {
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.process_step h4 {
+		font-size: 14px;
+		margin-bottom: 8px;
+	}
+	.process_step p {
+		font-size: 12px;
+		line-height: 1.5;
+	}
+	
+	/* Pricing boxes */
+	.pricing_box {
+		padding: 20px 15px;
+	}
+	.price {
+		font-size: 24px;
+	}
+	.price span {
+		font-size: 14px;
+	}
+	.plan_header h3 {
+		font-size: 18px;
+	}
+	.plan_features li {
+		font-size: 13px;
+		padding: 6px 0;
+	}
+	.badge_featured {
+		font-size: 10px;
+		padding: 4px 10px;
+		top: -12px;
+	}
+	
+	/* Value boxes */
+	.value_box {
+		padding: 18px 12px;
+	}
+	.value_box h4 {
+		font-size: 16px;
+	}
+	.value_box p {
+		font-size: 13px;
+	}
+	
+	/* Reason boxes */
+	.reason_box h4 {
+		font-size: 16px;
+	}
+	.reason_box p {
+		font-size: 13px;
+	}
+	
+	/* Audience boxes */
+	.audience_box {
+		padding: 20px 15px;
+	}
+	.audience_box h4 {
+		font-size: 16px;
+	}
+	.audience_box p {
+		font-size: 13px;
+	}
+	
+	/* Guarantee box */
+	.guarantee_box {
+		padding: 25px 15px;
+	}
+	.guarantee_box h3 {
+		font-size: 20px;
+	}
+	.guarantee_box .lead {
+		font-size: 14px;
+	}
+	
+	/* Included services */
+	.included_service h4 {
+		font-size: 14px;
+	}
+	.included_service p {
+		font-size: 13px;
+	}
+	
+	/* Hosting type boxes */
+	.hosting_type_box {
+		padding: 18px 12px;
+	}
+	.hosting_type_box h4 {
+		font-size: 15px;
+	}
+	.type_icon {
+		font-size: 2rem;
+	}
+	
+	/* Tech list */
+	.tech_list li {
+		font-size: 13px;
+		padding: 6px 0;
+	}
+	
+	/* Tech section */
+	.tech_section h4 {
+		font-size: 15px;
+	}
+	.tech_section p {
+		font-size: 13px;
+	}
+	
+	/* Case study boxes */
+	.case_study_box {
+		padding: 20px 15px;
+	}
+	.case_study_box h4 {
+		font-size: 16px;
+	}
+	.case_study_box p {
+		font-size: 13px;
+	}
+	
+	/* Approach boxes */
+	.approach_box h4 {
+		font-size: 15px;
+	}
+	.approach_box p {
+		font-size: 13px;
+	}
+	
+	/* Platform boxes */
+	.platform_box {
+		padding: 20px 15px;
+		margin-bottom: 15px;
+	}
+	.platform_box h4 {
+		font-size: 15px;
+	}
+	.platform_box ul li {
+		font-size: 12px;
+	}
+	
+	/* Principle boxes */
+	.principle_box h4 {
+		font-size: 14px;
+	}
+	.principle_box p {
+		font-size: 13px;
+	}
+	
+	/* Toolkit boxes */
+	.toolkit_box {
+		padding: 20px 15px;
+		margin-bottom: 15px;
+	}
+	.toolkit_box h4 {
+		font-size: 15px;
+	}
+	.toolkit_box ul li {
+		font-size: 12px;
+	}
+	
+	/* Service item boxes */
+	.service_item_box h5 {
+		font-size: 14px;
+	}
+	.service_item_box p {
+		font-size: 12px;
+	}
+	
+	/* Contact boxes */
+	.contact_box {
+		padding: 20px 15px;
+	}
+	.contact_box i {
+		font-size: 1.8rem;
+	}
+	.contact_box h4 {
+		font-size: 15px;
+	}
+	.contact_box p {
+		font-size: 13px;
+	}
+	
+	/* Contact reason boxes */
+	.contact_reason_box {
+		padding: 15px 10px;
+	}
+	.contact_reason_box i {
+		font-size: 1.5rem;
+	}
+	.contact_reason_box h4 {
+		font-size: 14px;
+	}
+	.contact_reason_box p {
+		font-size: 12px;
+	}
+	
+	/* Contact option boxes */
+	.contact_option_box h4 {
+		font-size: 14px;
+	}
+	.contact_option_box p {
+		font-size: 13px;
+	}
+	
+	/* Contact form */
+	.contact_form label {
+		font-size: 13px;
+	}
+	.contact_form .form-control,
+	.contact_form .form-select {
+		padding: 10px 12px;
+		font-size: 13px;
+	}
+	
+	/* Accordion */
+	.accordion-button {
+		padding: 12px;
+		font-size: 13px;
+	}
+	.accordion-body {
+		padding: 12px;
+		font-size: 12px;
+	}
+	
+	/* Buttons */
+	.btn_1 {
+		padding: 10px 18px;
+		font-size: 13px;
+	}
+	.full-width {
+		padding: 10px;
+	}
 }

@@ -1,6 +1,34 @@
 /* WRITE HERE YOUR CUSTOM CSS IN ORDER TO MAKE ITEM UPDATES EASY */
 
 /* ========================================
+   Homepage Styles
+   ======================================== */
+
+/* Why Work With Us - feature boxes */
+.feature_home {
+	padding: 20px 0;
+	margin-bottom: 15px;
+}
+.feature_home i {
+	font-size: 2rem;
+	color: #3E5E3A;
+	margin-bottom: 10px;
+	display: block;
+}
+.feature_home h4 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #333333;
+	margin-bottom: 8px;
+}
+.feature_home p {
+	color: #555;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+/* ========================================
    About Page Styles
    ======================================== */
 
